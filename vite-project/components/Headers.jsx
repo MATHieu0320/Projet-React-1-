@@ -1,14 +1,20 @@
-export function Header({ img }) {
-  const ValeurLi = ["About", "Services ", "Projects", "Conctact"];
+export function Header({ imgbackground, imgLogo, imgFlechesBas }) {
+  const ValeurLi = ["About", "services ", "Projects", "Conctact"];
   return (
-    <header>
+    <header
+      style={{
+        backgroundImage: `url( ${imgbackground} )`,
+      }}>
       <nav>
-        <img src={img} alt="Logo"></img>
+        <img src={imgLogo} alt="Logo"></img>
         {ValeurLi.map((li) => (
-          <li key={li}>{li}</li>
+          <li key={li}>
+            <a href={li}>{li}</a>
+          </li>
         ))}
       </nav>
       <h1>WE ARE CREATIVES</h1>
+      <img src={imgFlechesBas} alt="imgFlechesBas" />
     </header>
   );
 }

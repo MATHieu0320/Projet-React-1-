@@ -48,7 +48,11 @@ function App() {
 
   return (
     <>
-      <Header img={logo} />
+      <Header
+        imgbackground={BackgroundHeader}
+        imgLogo={logo}
+        imgFlechesBas={FlecheDuBas}
+      />
     </>
   );
 }
