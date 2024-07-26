@@ -1,13 +1,18 @@
 import React from "react";
 
-const Text = (h2, paragraphe, span) => {
+export const Text = ({ Titre, Paragraphe, img }) => {
   return (
     <div className="grid">
-      <h2> {h2} </h2>
-      <p> {paragraphe} </p>
-      <span>
-        <a href={span}> {span} </a>
-      </span>
+      <div>
+        <h2> {Titre} </h2>
+        <p> {Paragraphe} </p>
+        <span>
+          <a href="span">learn more</a>
+        </span>
+      </div>
+      <div>
+        <img src={img} />
+      </div>
     </div>
   );
 };
