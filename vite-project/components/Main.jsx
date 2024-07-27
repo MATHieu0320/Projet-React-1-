@@ -1,16 +1,19 @@
 import React from "react";
 import Text from "./TextComponant/Text";
 import { DoublePhoto } from "./TextComponant/DoublePhoto";
-
 // desktop
 import Oeuf from "../Images/desktop/image-transform.jpg";
 import Verre from "../Images/desktop/image-stand-out.jpg";
 import Cerise from "../Images/desktop/image-graphic-design.jpg";
+import FruitsOrange from "../Images/desktop/image-photography.jpg";
+
 // mobile
+
 import OeufMobile from "../Images/mobile/image-transform.jpg";
 import VerreMobile from "../Images/mobile/image-stand-out.jpg";
 import CeriseMobile from "../Images/mobile/image-graphic-design.jpg";
-const Main = () => {
+import FruitsOrangeMobile from "../Images/mobile/image-photography.jpg";
+export const Main = () => {
   return (
     <main>
       <Text
@@ -35,6 +38,7 @@ const Main = () => {
         }
       />
       <DoublePhoto
+        img={FruitsOrange}
         Titreh3={"Photography"}
         Paragraphe={
           "Increase your credibility by getting the most stunning hight-quality photos that improve your<br> buisness Image."
