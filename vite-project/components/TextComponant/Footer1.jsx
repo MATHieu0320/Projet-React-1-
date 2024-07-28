@@ -1,18 +1,59 @@
 import React from "react";
 
-const Footer1 = ({ Logo }) => {
-  const ListesTexte = ["About", "Services", "Project"];
-  const Icones = [];
+import IconeFacebook from "../../Images/imagesnonresponsive/icon-facebook.svg";
+import IconeIntagram from "../../Images/imagesnonresponsive/icon-instagram.svg";
+import IconePinterest from "../../Images/imagesnonresponsive/icon-pinterest.svg";
+import IconeTwitter from "../../Images/imagesnonresponsive/icon-twitter.svg";
 
+const Footer1 = ({ Logo }) => {
+  // const ListesTexte = [
+  //   { Texte: "About", key: "About2" },
+  //   { Texte: "Services", key: "Service2" },
+  //   { Texte: "Project", key: "Project2" },
+  // ];
+
+  const ListesTexte = ["About", "Services", "Project"];
+  const myArray = [
+    {
+      number: 1,
+
+      image: IconeFacebook,
+      title: "IconeFacebook",
+    },
+    {
+      number: 2,
+      image: IconeIntagram,
+      title: "IconeIntagram",
+    },
+    {
+      number: 3,
+      image: IconePinterest,
+      title: "IconePinterest",
+    },
+    {
+      number: 4,
+      image: IconeTwitter,
+      title: "IconeTwitter",
+    },
+  ];
   return (
     <footer>
       <div>
         <img src={Logo}></img>
         <ul className="ul-1">
           {ListesTexte.map((Texte) => (
-            <a href={Texte}>
-              <li key={Texte}> {Texte} </li>
-            </a>
+            <li key={Texte.length}>
+              <a href={Texte}> {Texte} </a>
+            </li>
+          ))}
+        </ul>
+        <ul className="ul-2">
+          {myArray.map((img) => (
+            <li key={img.number}>
+              <a href={img.title}>
+                <img src={img.image} alt={img.title} />
+              </a>
+            </li>
           ))}
         </ul>
       </div>

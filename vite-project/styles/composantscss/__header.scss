@@ -1,0 +1,24 @@
+header {
+  padding: 15px 0;
+  height: 85vh;
+  width: 100%;
+  background: url(../../Images/desktop/image-header.jpg) center/cover;
+  nav {
+    @include Spacebetween;
+
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  ul {
+    @include Spacebetween;
+    width: 50%;
+  }
+  li:last-child a {
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 12px;
+    border-radius: 999px;
+    color: black;
+  }
+}
