@@ -17,7 +17,6 @@ import Footer1 from "../components/TextComponant/Footer1";
 
 import logo from "../Images/imagesnonresponsive/logo.svg";
 import FlecheDuBas from "../Images/imagesnonresponsive/icon-arrow-down.svg";
-import IconeHamburger from "../Images/imagesnonresponsive/icon-hamburger.svg";
 
 function App() {
   console.log(logo);

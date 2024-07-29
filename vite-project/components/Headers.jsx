@@ -1,9 +1,10 @@
+import IconeHamburger from "../Images/imagesnonresponsive/icon-hamburger.svg";
 export function Header({ imgLogo, imgFlechesBas }) {
   const ValeurLi = ["About", "services ", "Projects", "Conctact"];
   return (
     <header>
       <nav>
-        <img src={imgLogo} alt="Logo"></img>
+        <img src={imgLogo} alt="Logo" id="logo"></img>
         <ul>
           {ValeurLi.map((li) => (
             <li key={li}>
@@ -11,9 +12,15 @@ export function Header({ imgLogo, imgFlechesBas }) {
             </li>
           ))}
         </ul>
+        <img
+          style={{ display: "none" }}
+          src={IconeHamburger}
+          id="hamburger"></img>
       </nav>
       <h1>WE ARE CREATIVES</h1>
-      <img src={imgFlechesBas} alt="imgFlechesBas" />
+      <div className="ClassImgFLechesBas">
+        <img src={imgFlechesBas} alt="imgFlechesBas" id="imgFlechesBas" />
+      </div>
     </header>
   );
 }

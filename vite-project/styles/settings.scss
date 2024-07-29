@@ -16,14 +16,32 @@
   font-family: "barlow";
   src: url(../font/Barlow-SemiBold.ttf);
 }
+
+$FontFrancess700: Francess700;
+$FontFrancess900: Francess900;
+$FontBarlow: barlow;
+
+// primaireeeeeeeeeeeee
+
+$OrangeRed: hsl(7, 99%, 70%);
+$Jaune: hsl(51, 100%, 49%);
+$DarkDesaturated: hsl(167, 40%, 24%);
+$Dark: hsl(198, 62%, 26%);
+$Cyan: hsl(168, 34%, 41%);
+
+// second
+
+$verydarkdesaturated: hsl(212, 27%, 19%);
+$verydarkgrayish: hsl(213, 9%, 39%);
+$SombreGrisBleu: hsl(232, 10%, 55%);
+$GrisBleu: hsl(210, 4%, 67%);
+$Blanc: hsl(0, 0%, 100%);
+
 @mixin Spacebetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-$FontFrancess700: Francess700, serif;
-$FontFrancess900: Francess900, serif;
-$FontBarlow: barlow;
 body {
   font-family: $FontBarlow;
 }
