@@ -17,11 +17,13 @@ export const Main = () => {
   return (
     <main>
       <Text
-        Titre={"transform your  brand"}
+        Titre={`Transform your brand`}
         Paragraphe={
           "We are a full-service creative agency speicalizing in helping brands grow fast. Engage your client through compelling cisuals that do most of marketing for you. "
         }
         img={Oeuf}
+        className={"grid-1"}
+        id={"span1"}
       />
       <Text
         Titre={"Stand out to the right audience"}
@@ -29,6 +31,8 @@ export const Main = () => {
           "Using a collaborative formula of designers , resarchers , photographers , videographers , and copywhriters, we'II build and extend your brand in digital places."
         }
         img={Verre}
+        className={"grid-2"}
+        id={"span2"}
       />
       <DoublePhoto
         img={Cerise}

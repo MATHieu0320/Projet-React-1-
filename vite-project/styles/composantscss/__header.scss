@@ -33,6 +33,11 @@ header {
     background-color: rgb(111, 207, 255);
     color: white;
   }
+  #hamburger {
+    display: none;
+    cursor: pointer;
+    height: 25px;
+  }
   h1 {
     letter-spacing: 13px;
     margin-top: 120px;

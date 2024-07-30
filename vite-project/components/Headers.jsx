@@ -12,10 +12,7 @@ export function Header({ imgLogo, imgFlechesBas }) {
             </li>
           ))}
         </ul>
-        <img
-          style={{ display: "none" }}
-          src={IconeHamburger}
-          id="hamburger"></img>
+        <img src={IconeHamburger} id="hamburger"></img>
       </nav>
       <h1>WE ARE CREATIVES</h1>
       <div className="ClassImgFLechesBas">

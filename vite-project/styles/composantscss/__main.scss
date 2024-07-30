@@ -1,0 +1,86 @@
+main {
+  width: 100%;
+  .grid-1,
+  .grid-2 {
+    display: flex;
+  }
+  .grid-2 {
+    flex-direction: row-reverse;
+  }
+  .flex-Texte,
+  .flex-img {
+    position: relative;
+    width: 50%;
+  }
+  .flex-Texte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Margin {
+    width: 80%;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-family: $FontFrancess900;
+  }
+  p {
+    margin: 25px 0;
+    line-height: 32px;
+    font-family: $FontBarlow;
+    font-size: 1.1rem;
+  }
+  span a {
+    color: black;
+    text-transform: uppercase;
+    font-family: $FontFrancess900;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  #span2 a::after,
+  #span1 a::after {
+    content: "";
+    position: absolute;
+    background-color: $Jaune;
+    border: 5px solid $Jaune;
+    border-radius: 5px;
+    top: 60%;
+    opacity: 0.3;
+    left: -2%;
+    width: 100%;
+  }
+  #span2 a::after {
+    border: 5px solid $OrangeRed;
+    opacity: 0.4;
+  }
+  #span2 a:hover:after {
+    border: 5px solid $OrangeRed;
+    opacity: 1;
+    z-index: -1;
+  }
+  #span1 a:hover:after {
+    border: 5px solid $Jaune;
+    opacity: 1;
+    z-index: -1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (max-width: 1000px) {
+    h2 {
+      font-size: 2.1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    .Margin {
+      width: 93%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+  }
+}
