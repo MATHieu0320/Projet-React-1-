@@ -1,10 +1,9 @@
 import React from "react";
 
-export const Text = ({ Titre, Paragraphe, img, className, id }) => {
+export const Text = ({ Titre, Paragraphe, img, className, id, imgmobile }) => {
   return (
     <div className={className}>
       <div className="flex-Texte">
-        ererza
         <div className="Margin">
           <h2> {Titre} </h2>
           <p> {Paragraphe} </p>
@@ -14,7 +13,11 @@ export const Text = ({ Titre, Paragraphe, img, className, id }) => {
         </div>
       </div>
       <div className="flex-img">
-        <img srcSet="" sizes={"33.33vw"} src={img} />
+        <picture>
+          <source media="(min-width: 1200px)" srcSet={img} />
+          <source media="(max-width: 800px)" srcSet={imgmobile} />
+          <img src={img} alt="Flowers" />
+        </picture>
       </div>
     </div>
   );

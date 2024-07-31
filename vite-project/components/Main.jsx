@@ -24,12 +24,14 @@ export const Main = () => {
         img={Oeuf}
         className={"grid-1"}
         id={"span1"}
+        imgmobile={OeufMobile}
       />
       <Text
         Titre={"Stand out to the right audience"}
         Paragraphe={
           "Using a collaborative formula of designers , resarchers , photographers , videographers , and copywhriters, we'II build and extend your brand in digital places."
         }
+        imgmobile={VerreMobile}
         img={Verre}
         className={"grid-2"}
         id={"span2"}
