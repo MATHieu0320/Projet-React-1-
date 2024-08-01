@@ -1,16 +1,38 @@
 import { useState } from "react";
 
 import IconeHamburger from "../Images/imagesnonresponsive/icon-hamburger.svg";
+import "../styles/composantscss/StyleHamburger.css";
 
+console.log();
 export function Header({ imgLogo, imgFlechesBas }) {
-  const ValeurLi = ["About", "services ", "Projects", "Conctact"];
-  // const [Click, UseClick] = useState(false);
+  const ValeurLi = ["About", "services ", "Projects", "Contact"];
 
   function HandTheClick() {
     const ul = document.getElementById("UlClick");
-    // useState(!Click);
+    const li = document.querySelectorAll("#UlClick li a");
+    const h1 = document.querySelector("h1");
+    const logo = document.getElementById("imgFlechesBas");
 
-    ul.classList.toggle((ul.style.display = "block"));
+    li.forEach((liColor) => {
+      liColor.classList.toggle("LiClick");
+    });
+    ul.classList.toggle("HamburgerClick");
+    logo.classList.toggle("None");
+    h1.classList.toggle("None");
+
+    // UseClick(!Click);
+    // if (Click === true) {
+
+    //   // ul.style.background = "white";
+
+    //   ul.style.textAlign = "center";
+    //   li.style.padding = "20px 0;";
+    // } else {
+    //   ul.style.display = "none";
+    //   console.log("pe");
+    // }
+    //   ul.classList.toggle((ul.style.display = "block"));
+    //
   }
   return (
     <header>
@@ -25,7 +47,7 @@ export function Header({ imgLogo, imgFlechesBas }) {
         </ul>
       </nav>{" "}
       <img src={IconeHamburger} onClick={HandTheClick} id="hamburger"></img>
-      <h1>WE ARE CREATIVES</h1>
+      <h1>we are creatives</h1>
       <div className="ClassImgFLechesBas">
         <img src={imgFlechesBas} alt="imgFlechesBas" id="imgFlechesBas" />
       </div>

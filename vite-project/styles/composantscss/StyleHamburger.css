@@ -1,4 +1,23 @@
 .HamburgerClick {
-  display: block;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  height: 350px;
+  min-width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+.LiClick {
+  color: black;
+  padding: 20px 0px;
+  transition: 0.5s;
+}
+.None {
+  display: none;
 }
