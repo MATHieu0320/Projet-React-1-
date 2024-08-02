@@ -69,30 +69,41 @@ main {
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
+
   .grid-3 {
-    display: flex;
-    text-align: center;
-    .grid {
-      width: 50%;
-      position: relative;
-    }
-    .grid img {
-      position: relative;
-      width: 100%;
-      height: 75%;
-      object-fit: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    height: 570px;
+    .MainTexte1,
+    .MainTexte2 {
+      padding-top: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .MainTexte1 {
-      position: absolute;
-    }
-    img {
+      background: url(../../Images/desktop/image-graphic-design.jpg)
+        center/cover;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      background-size: 100% 100%;
+    }
+    .MainTexte2 {
+      background: url(../../Images/desktop/image-photography.jpg) center/cover;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
     }
     h3 {
       font-size: 1.5rem;
+    }
+    p {
+      width: 95%;
+      text-align: center;
     }
   }
 

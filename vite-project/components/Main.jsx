@@ -38,7 +38,6 @@ export const Main = () => {
       <div className="grid-3">
         <DoublePhoto
           Class={"MainTexte1"}
-          img={Cerise}
           Titreh3={"Graphic Design"}
           Paragraphe={
             " Great design makes you memorable. We deliver  artwork that underscores your brand message  and captures potential clients attention."
@@ -46,7 +45,6 @@ export const Main = () => {
         />
         <DoublePhoto
           Class={"MainTexte2"}
-          img={FruitsOrange}
           Titreh3={"Photography"}
           Paragraphe={
             "Increase your credibility by getting the most stunning hight-quality photos that improve your<br> buisness Image."
