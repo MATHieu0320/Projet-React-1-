@@ -6,7 +6,6 @@ import Oeuf from "../Images/desktop/image-transform.jpg";
 import Verre from "../Images/desktop/image-stand-out.jpg";
 import Cerise from "../Images/desktop/image-graphic-design.jpg";
 import FruitsOrange from "../Images/desktop/image-photography.jpg";
-
 // mobile
 
 import OeufMobile from "../Images/mobile/image-transform.jpg";
@@ -38,6 +37,7 @@ export const Main = () => {
       />
       <div className="grid-3">
         <DoublePhoto
+          Class={"MainTexte1"}
           img={Cerise}
           Titreh3={"Graphic Design"}
           Paragraphe={
@@ -45,6 +45,7 @@ export const Main = () => {
           }
         />
         <DoublePhoto
+          Class={"MainTexte2"}
           img={FruitsOrange}
           Titreh3={"Photography"}
           Paragraphe={
