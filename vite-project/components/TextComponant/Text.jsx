@@ -15,7 +15,11 @@ export const Text = ({ Titre, Paragraphe, img, className, id, imgmobile }) => {
       <div className="flex-img">
         <picture>
           <source media="(min-width: 1200px)" srcSet={img} />
-          <source media="(max-width: 800px)" srcSet={imgmobile} />
+          <source
+            media="(max-width: 800px)"
+            srcSet={imgmobile}
+            height={"500px"}
+          />
           <img src={img} alt="Flowers" />
         </picture>
       </div>
