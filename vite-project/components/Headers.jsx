@@ -43,10 +43,11 @@ export function Header({ imgLogo, imgFlechesBas }) {
             <li key={li}>
               <a href={li}>{li}</a>
             </li>
-          ))}
-        </ul>
-      </nav>{" "}
-      <img src={IconeHamburger} onClick={HandTheClick} id="hamburger"></img>
+          ))}{" "}
+        </ul>{" "}
+        <img src={IconeHamburger} onClick={HandTheClick} id="hamburger"></img>
+      </nav>
+
       <h1>we are creatives</h1>
       <div className="ClassImgFLechesBas">
         <img src={imgFlechesBas} alt="imgFlechesBas" id="imgFlechesBas" />

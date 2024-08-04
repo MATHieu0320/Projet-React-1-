@@ -47,7 +47,7 @@ export const Main = () => {
           Class={"MainTexte2"}
           Titreh3={"Photography"}
           Paragraphe={
-            "Increase your credibility by getting the most stunning hight-quality photos that improve your<br> buisness Image."
+            "Increase your credibility by getting the most stunning hight-quality photos that improve your buisness Image."
           }
         />
       </div>
