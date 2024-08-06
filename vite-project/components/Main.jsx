@@ -14,7 +14,7 @@ import CeriseMobile from "../Images/mobile/image-graphic-design.jpg";
 import FruitsOrangeMobile from "../Images/mobile/image-photography.jpg";
 export const Main = () => {
   return (
-    <main>
+    <main id="About">
       <Text
         Titre={`Transform your brand`}
         Paragraphe={
@@ -35,7 +35,7 @@ export const Main = () => {
         className={"grid-2"}
         id={"span2"}
       />
-      <div className="grid-3">
+      <div className="grid-3" id="services">
         <DoublePhoto
           Class={"MainTexte1"}
           Titreh3={"Graphic Design"}

@@ -5,13 +5,7 @@ import IconeIntagram from "../../Images/imagesnonresponsive/icon-instagram.svg";
 import IconePinterest from "../../Images/imagesnonresponsive/icon-pinterest.svg";
 import IconeTwitter from "../../Images/imagesnonresponsive/icon-twitter.svg";
 
-const Footer1 = ({ Logo }) => {
-  // const ListesTexte = [
-  //   { Texte: "About", key: "About2" },
-  //   { Texte: "Services", key: "Service2" },
-  //   { Texte: "Project", key: "Project2" },
-  // ];
-
+const Footer1 = ({}) => {
   const ListesTexte = ["About", "Services", "Project"];
   const myArray = [
     {
@@ -37,13 +31,13 @@ const Footer1 = ({ Logo }) => {
     },
   ];
   return (
-    <footer>
+    <footer id="Contact">
       <div>
-        <img src={Logo}></img>
+        <h6>sunnyside</h6>
         <ul className="ul-1">
           {ListesTexte.map((Texte) => (
             <li key={Texte.length}>
-              <a href={Texte}> {Texte} </a>
+              <a href={`#` + Texte}> {Texte} </a>
             </li>
           ))}
         </ul>

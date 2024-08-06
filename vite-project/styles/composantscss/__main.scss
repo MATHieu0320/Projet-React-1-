@@ -102,7 +102,7 @@ main {
       margin-bottom: 20px;
     }
     p {
-      width: 60%;
+      width: 50%;
       text-align: center;
       display: -webkit-box;
       -webkit-box-orient: vertical;
@@ -120,6 +120,10 @@ main {
       width: 80%;
     }
     @media screen and (max-width: 1000px) {
+      .grid-3 .MainTexte2,
+      .grid-3 .MainTexte1 {
+        background-size: cover;
+      }
       h2 {
         font-size: 2.1rem;
       }

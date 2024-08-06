@@ -13,12 +13,12 @@ import CornetMobile from "../Images/mobile/image-gallery-cone.jpg";
 import sucreMobile from "../Images/mobile/image-gallery-sugar-cubes.jpg";
 const Section2 = () => {
   return (
-    <div className="Grid-images">
-      <Les4images img={BouchonRouge} />
-      <Les4images img={orange} />
-      <Les4images img={Cornet} />
-      <Les4images img={sucre} />
-    </div>
+    <section className="section2" id="Projects">
+      <Les4images img={BouchonRouge} imgmobile={BouchonRougeMobile} />
+      <Les4images img={orange} imgmobile={orangeMobile} />
+      <Les4images img={Cornet} imgmobile={CornetMobile} />
+      <Les4images img={sucre} imgmobile={sucre} />
+    </section>
   );
 };
 
