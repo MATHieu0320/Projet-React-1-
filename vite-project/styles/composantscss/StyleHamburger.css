@@ -1,7 +1,7 @@
 .HamburgerClick {
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -11,7 +11,17 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  transition: 0.5s;
+  animation: anim 1s;
+}
+
+@keyframes anim {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 50%;
+  }
 }
 .LiClick {
   color: black;

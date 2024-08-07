@@ -5,7 +5,7 @@ import "../styles/composantscss/StyleHamburger.css";
 
 console.log();
 export function Header({ imgLogo, imgFlechesBas }) {
-  const ValeurLi = ["About", "services ", "Projects", "Contact"];
+  const ValeurLi = ["About", "Services", "Projects", "Contact"];
 
   function HandTheClick() {
     const ul = document.getElementById("UlClick");
@@ -17,22 +17,9 @@ export function Header({ imgLogo, imgFlechesBas }) {
       liColor.classList.toggle("LiClick");
     });
     ul.classList.toggle("HamburgerClick");
+
     logo.classList.toggle("None");
     h1.classList.toggle("None");
-
-    // UseClick(!Click);
-    // if (Click === true) {
-
-    //   // ul.style.background = "white";
-
-    //   ul.style.textAlign = "center";
-    //   li.style.padding = "20px 0;";
-    // } else {
-    //   ul.style.display = "none";
-    //   console.log("pe");
-    // }
-    //   ul.classList.toggle((ul.style.display = "block"));
-    //
   }
   return (
     <header>
@@ -47,7 +34,6 @@ export function Header({ imgLogo, imgFlechesBas }) {
         </ul>
         <img src={IconeHamburger} onClick={HandTheClick} id="hamburger"></img>
       </nav>
-
       <h1>we are creatives</h1>
       <div className="ClassImgFLechesBas">
         <img src={imgFlechesBas} alt="imgFlechesBas" id="imgFlechesBas" />

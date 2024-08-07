@@ -35,7 +35,7 @@ export const Main = () => {
         className={"grid-2"}
         id={"span2"}
       />
-      <div className="grid-3" id="services">
+      <div className="grid-3" id="Services">
         <DoublePhoto
           Class={"MainTexte1"}
           Titreh3={"Graphic Design"}
