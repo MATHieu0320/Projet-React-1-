@@ -25,13 +25,16 @@ export function Header({ imgLogo, imgFlechesBas }) {
     <header>
       <nav>
         <img src={imgLogo} alt="Logo" id="logo"></img>
+
         <ul id="UlClick">
+          {" "}
           {ValeurLi.map((li) => (
             <li key={li}>
               <a href={`#` + li}>{li}</a>
             </li>
           ))}
         </ul>
+
         <img src={IconeHamburger} onClick={HandTheClick} id="hamburger"></img>
       </nav>
       <h1>we are creatives</h1>

@@ -2,6 +2,7 @@ header {
   padding: 25px 0;
   height: 85vh;
   width: 100%;
+
   background: url(../../Images/desktop/image-header.jpg) center/cover;
   @media screen and (max-width: 590px) {
     background: url(../../Images/mobile/image-header.jpg) center/cover;
@@ -74,15 +75,6 @@ header {
     li:last-child a {
       background-color: $Jaune;
       color: black;
-    }
-
-    ul::before {
-      content: "";
-      position: absolute;
-      top: 5%;
-      left: 100%;
-      border-bottom: 150px solid red;
-      border-left: 150px solid transparent;
     }
 
     nav ul {
